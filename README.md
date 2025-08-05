@@ -6,7 +6,7 @@ This repository contains my personal notes, exercises, and project implementatio
 
 ## 🎯 Purpose
 
-The goal of this repository is to deepen my understanding of SwiftUI by exploring the fundamental building blocks presented in Apple's tutorial. Key concepts include:
+The goal of this repository is to deepen my understanding of SwiftUI by exploring the fundamental building blocks presented in Apple's tutorial. Key concepts include: 
 
 - Declarative UI
 - Data flow with `@State`, `@Binding`, `@Environment`, etc.
