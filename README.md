@@ -29,6 +29,17 @@ Each folder typically includes:
 - Xcode project and Swift source files
 - Notes or reference material (when relevant)
 
+🏞 Landmarks Project
+
+The `Landmarks` folder contains the first complete project from Apple’s SwiftUI Concepts tutorial. It introduces:
+
+- Declarative layout with stacks
+- Reusable components (`MapView`, `CircleImage`, `LandmarkRow`)
+- Real-time previews
+- MapKit integration
+
+This project is a hands-on exercise to build a landmark detail screen and learn how SwiftUI combines views, data, and navigation.
+
 ---
 
 ## 🚀 Requirements
