@@ -34,11 +34,15 @@ Each folder typically includes:
 The `Landmarks` folder contains the first complete project from Apple’s SwiftUI Concepts tutorial. It introduces:
 
 - Declarative layout with stacks
-- Reusable components (`MapView`, `CircleImage`, `LandmarkRow`)
+- Reusable components
 - Real-time previews
 - MapKit integration
+- Dynamic lists generated from data with List and ForEach
+- Identifiable model structures for seamless list rendering
+- Hierarchical navigation using NavigationView and NavigationLink
+- Multiple previews to test layouts on different devices and orientations
 
-This project is a hands-on exercise to build a landmark detail screen and learn how SwiftUI combines views, data, and navigation.
+This project starts with a static landmark detail screen and evolves into a data-driven list with navigation, demonstrating how SwiftUI combines views, data, and navigation in a scalable way.
 
 ---
 
