@@ -41,6 +41,8 @@ The `Landmarks` folder contains the first complete project from Apple’s SwiftU
 - Identifiable model structures for seamless list rendering
 - Hierarchical navigation using NavigationView and NavigationLink
 - Multiple previews to test layouts on different devices and orientations
+- Data flow and state management with @State, @Binding, @Observable, and @Environment
+- A shared ModelData object as single source of truth, enabling user interactions (like marking favorites) to automatically update across views
 
 This project starts with a static landmark detail screen and evolves into a data-driven list with navigation, demonstrating how SwiftUI combines views, data, and navigation in a scalable way.
 
