@@ -48,6 +48,8 @@ The `Landmarks` folder contains the first complete project from Apple’s SwiftU
 - Category-based home screen that combines a vertically scrolling list of horizontally scrolling landmark rows (e.g., List + ScrollView(.horizontal) + HStack / LazyHStack), composing complex layouts from simple containers
 - Category data grouping from the model (e.g., grouping landmarks by their category) to power sectioned and carousel UIs efficiently
 - Reusable views for the category experience (CategoryHome, CategoryRow, CategoryItem) and navigation between sections to filtered lists and detail views, keeping code modular and scalable
+- Common UI controls & edit flow: Form/Section, Toggle, Picker, DatePicker, and EditButton with editMode, all bound to model data.
+- Draft-then-commit pattern: edit a draft Profile via bindings and Save/Cancel to commit or discard changes.
 
 This project starts with a static landmark detail screen and evolves into a data-driven list with navigation, demonstrating how SwiftUI combines views, data, and navigation in a scalable way.
 
