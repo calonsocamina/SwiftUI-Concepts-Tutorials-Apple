@@ -33,23 +33,25 @@ Each folder typically includes:
 
 The `Landmarks` folder contains the first complete project from Apple’s SwiftUI Concepts tutorial. It introduces:
 
-- Declarative layout with stacks
-- Reusable components
-- Real-time previews
-- MapKit integration
-- Dynamic lists generated from data with List and ForEach
-- Identifiable model structures for seamless list rendering
-- Hierarchical navigation using NavigationView and NavigationLink
-- Multiple previews to test layouts on different devices and orientations
-- Data flow and state management with @State, @Binding, @Observable, and @Environment
-- A shared ModelData object as single source of truth, enabling user interactions (like marking favorites) to automatically update across views
-- Custom drawing with paths and shapes to render a scalable hexagonal badge symbol, demonstrating how SwiftUI integrates vector graphics with layout and styling
-- Animations and transitions with implicit and explicit animations, custom transitions, and matched geometry effects, enhancing interactivity and user experience
-- Category-based home screen that combines a vertically scrolling list of horizontally scrolling landmark rows (e.g., List + ScrollView(.horizontal) + HStack / LazyHStack), composing complex layouts from simple containers
+- Declarative layout with stacks (`HStack`, `VStack`, `ZStack`)
+- Reusable components via `View` composition
+- Real-time previews with `PreviewProvider`
+- MapKit integration (`Map`, `MKCoordinateRegion`)
+- Dynamic lists generated from data with `List` and `ForEach`
+- Identifiable model structures (`Identifiable`) for seamless list rendering
+- Hierarchical navigation using `NavigationView` and `NavigationLink`
+- Multiple previews to test layouts on different devices and orientations (`previewDevice`, `.previewLayout`)
+- Data flow and state management with `@State`, `@Binding`, `@Observable`, and `@Environment`
+- A shared `ModelData` object as single source of truth (e.g., via `@EnvironmentObject`), enabling user interactions (like marking favorites) to automatically update across views
+- Custom drawing with paths and shapes (`Path`, `Shape`) to render a scalable hexagonal badge symbol, demonstrating how SwiftUI integrates vector graphics with layout and styling
+- Animations and transitions with implicit/explicit `withAnimation`, `.animation(_:)`, custom `.transition(_:)`, and matched geometry (`@Namespace`)
+- Category-based home screen that combines a vertically scrolling list of horizontally scrolling landmark rows (e.g., `List` + `ScrollView(.horizontal)` + `HStack` / `LazyHStack`), composing complex layouts from simple containers
 - Category data grouping from the model (e.g., grouping landmarks by their category) to power sectioned and carousel UIs efficiently
-- Reusable views for the category experience (CategoryHome, CategoryRow, CategoryItem) and navigation between sections to filtered lists and detail views, keeping code modular and scalable
-- Common UI controls & edit flow: Form/Section, Toggle, Picker, DatePicker, and EditButton with editMode, all bound to model data.
-- Draft-then-commit pattern: edit a draft Profile via bindings and Save/Cancel to commit or discard changes.
+- Reusable views for the category experience (`CategoryHome`, `CategoryRow`, `CategoryItem`) and navigation between sections to filtered lists and detail views, keeping code modular and scalable
+- Common UI controls & edit flow: `Form`/`Section`, `Toggle`, `Picker`, `DatePicker`, and `EditButton` with `editMode`, all bound to model data
+- Draft-then-commit pattern: edit a draft `Profile` via bindings and **Save/Cancel** to commit or discard changes
+- Interfacing with UIKit: wrap UIKit views/controllers using `UIViewRepresentable` / `UIViewControllerRepresentable`, bridge delegates via a `Coordinator`, and embed SwiftUI in UIKit with `UIHostingController`
+- UIKit-powered paging in SwiftUI: build a carousel using `UIPageViewController` + `UIPageControl` bridged into SwiftUI (e.g., `PageView` / `PageViewController`), keeping SwiftUI state in sync with UIKit updates
 
 This project starts with a static landmark detail screen and evolves into a data-driven list with navigation, demonstrating how SwiftUI combines views, data, and navigation in a scalable way.
 
