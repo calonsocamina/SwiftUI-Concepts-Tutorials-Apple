@@ -54,6 +54,8 @@ The `Landmarks` folder contains the first complete project from Apple’s SwiftU
 - UIKit-powered paging in SwiftUI: build a carousel using `UIPageViewController` + `UIPageControl` bridged into SwiftUI (e.g., `PageView` / `PageViewController`), keeping SwiftUI state in sync with UIKit updates
 - Creating a watchOS app: add a watchOS target and share code/assets between targets; reuse SwiftUI views with `@Environment` to drive watch navigation and detail screens
 - watchOS specifics: adapt list/detail and `Map` for watch, and build a simple custom notification interface with preview payloads
+- Creating a macOS app: add a macOS target, share models/views across platforms, and keep data in sync via `@Environment`
+- macOS specifics: sidebar + detail using `NavigationSplitView` (or split-style `NavigationView`), `List(selection:)` to drive detail, platform toolbars & menus via `.toolbar` and `.commands` (e.g., toggle favorites), a `Settings` scene, keyboard shortcuts, and `#if os(macOS)` conditionals where needed
 
 This project starts with a static landmark detail screen and evolves into a data-driven list with navigation, demonstrating how SwiftUI combines views, data, and navigation in a scalable way.
 
